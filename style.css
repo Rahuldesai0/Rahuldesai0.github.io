@@ -114,7 +114,7 @@
     #contacts{
         color: white;
         margin-left: -10vw;
-        width: 89vw;
+        width: calc(100%-20vw);
         font-family: 'Dosis', sans-serif;
         background: #000322;
         transition: all 0.5s ease;
@@ -122,7 +122,7 @@
       }
 
       body.active #contacts{
-        width: 109vw;
+        width: calc(100%+20vw);
       }
 
       body.active #contacts i{
