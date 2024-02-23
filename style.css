@@ -141,4 +141,6 @@
     #contacts a{
         color: white;
         text-decoration: none;
+        margin-right: 3vw;
+        text-align: center;
     }
