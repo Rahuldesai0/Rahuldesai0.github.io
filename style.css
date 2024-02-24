@@ -115,6 +115,12 @@
         vertical-align: top;
     }
 
+    
+    body.active .main #personal table tr td,
+    body.active .main #education table tr td{
+        width: 30vw;
+    }
+
     #contacts{
         color: white;
         margin-left: -10vw;
