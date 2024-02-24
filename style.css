@@ -6,10 +6,12 @@
         padding: 0;
         box-sizing: border-box;
         font-family: 'Dosis', sans-serif;
+        scroll-behavior: smooth;
+        transition: all 0.5s ease;
     }
 
     body{
-        background-image: linear-gradient(90deg, cyan, blue);
+        background-color: cornflowerblue;
         }
 
     .sidebar .photo img {
@@ -37,7 +39,7 @@
         padding: 1vw;
         padding-top: 3.5vh;
         border-bottom: 1px solid darkblue;
-        font-size: 2vw;
+        font-size: 3vw;
         text-decoration: none;
     }
 
@@ -64,7 +66,7 @@
     .section .top_navbar {
         background-color: #000322;
         margin-top: 0;
-        height: 6.vh;
+        height: 6vh;
         align-items: center;
         padding: 0 30px;
     }
@@ -105,10 +107,12 @@
         margin-left: 22.5vw;
         top: 10vh;
         transition: all 0.5s ease;
+        color: #000322;
     }
 
-    .main h2{
-        color: navyblue;
+    .main #personal table tr td,
+    .main #education table tr td{
+        width: 16vw;
     }
 
     #contacts{
@@ -118,7 +122,11 @@
         font-family: 'Dosis', sans-serif;
         background: #000322;
         transition: all 0.5s ease;
-        font-size: 1.5vw;
+        font-size: 3.2vh;
+      }
+
+      #personal, #education, #skills, #achievements{
+        font-size: 3.2vh;
       }
 
       body.active #contacts{
@@ -143,4 +151,15 @@
         text-decoration: none;
         margin-right: 3vw;
         text-align: center;
+    }
+    #contacts table tr td{
+        height: 6vh;
+    }
+
+    #contacts table{
+        transition: all 0.5s ease;
+    }
+
+    body.active #contacts table{
+        width: 100%
     }
