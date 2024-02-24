@@ -5,41 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clock</title>
     <style>
-        body{
-            background-repeat: no-repeat;
-            background-image: url(clock.png);
+        #clock{
+            width: 100%;
+        }
+        img{
+            z-index: -1;
         }
         #hour, #minute, #second{
             transform-origin: bottom;
             background-color: black;
+            z-index: 1;
         }
         #hour{
             width: 10px;
             height: 60px;
             border-radius: 100vw;
-            margin-left: 280px;
-            margin-top: 155px;
+            margin-left: 285px;
+            margin-top: -275px;
         }
         #minute{
             width: 5px;
             border-radius: 100vw;
             height: 120px;
-            margin-left: 280px;
+            margin-left: 290px;
             margin-top: -125px;
         }
         #second{
             width: 1px;
             border-radius: 100vw;
             height: 150px;
-            margin-left: 280px;
+            margin-left: 290px;
             margin-top: -145px;
         }
     </style>
 </head>
 <body>
+    <div id="clock">
+        <img src="clock.png" alt="">
         <div id="hour"></div>
         <div id="minute"></div>
         <div id="second"></div>
+    </div>
     <script>
     setInterval(() => {
         date = new Date;
