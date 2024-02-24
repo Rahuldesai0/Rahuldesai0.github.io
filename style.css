@@ -15,7 +15,7 @@
         }
 
     .sidebar .photo img {
-        width: 15vw;
+        width: 10vw;
         margin-left: 3vw;
         margin-bottom: 1.5vh;
         border-radius: 150px;
@@ -33,13 +33,12 @@
     }
 
     .sidebar ul li a {
-        height: 10vh;
         display: block;
         color: white;
         padding: 1vw;
         padding-top: 3.5vh;
         border-bottom: 1px solid darkblue;
-        font-size: 3vw;
+        font-size: 2.5vw;
         text-decoration: none;
     }
 
@@ -122,7 +121,7 @@
         font-family: 'Dosis', sans-serif;
         background: #000322;
         transition: all 0.5s ease;
-        font-size: 3.2vh;
+        font-size: 1.5vw;
       }
 
       #personal, #education, #skills, #achievements{
@@ -131,6 +130,7 @@
 
       body.active #contacts{
         width: calc(100%+20vw);
+        font-size: 2vw;
       }
 
       body.active #contacts i{
