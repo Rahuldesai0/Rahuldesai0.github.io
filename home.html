@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<bod class="index" bgcolor="white">
+    <div class="topbar">
+        <h1>Rahul Desai</h1>
+    </div>
+        
+    <input autocomplete="on" id="searchbar" type="text" placeholder="Type what you want to know about me" name="" id="">
+    <br><br>
+    <button><i class="fa fa-search"></i>&nbsp;Search</button>
+    <br><br>
+    <div class="shortcuts">
+    <h2>Shortcuts:</h2>
+    <table>
+        <tr>
+            <td><a href="about.html">About Me</a></td>
+            <td><a href="articles.html">Articles/Blogs</a></td>
+            <td><a href="awards.html">Awards</a></td>
+            <td><a href="bestworks.html">Best Works</a></td>
+            <td><a href="biodata.html">CV</a></td>
+        </tr>
+        <tr>
+            <td><a href="contact.html">Contacts</a></td>
+            <td><a href="memories.html">Memories</a></td>
+            <td><a href="photos.html">Photo Gallery</a></td>
+            <td><a href="projects.html">Projects</a></td>
+            <td><a href="work.html">Work</a></td>
+        </tr>
+    </table>
+</div>
+    <script>
+        setInterval(()=>{
+    document.querySelector("button");
+    document.addEventListener("click", function(){
+        let search = document.getElementById("searchbar").value;
+        console.log(search);
+        document.getElementById("searchbar").value = "";
+        search = search.toLowerCase();
+        if(search.includes("about") || search.includes("abt")){
+            window.open("about.html","_self")
+        }
+        else if(search.includes("contact") || search.includes("number")){
+            window.open("contact.html","_self");
+        }
+        else if(search.includes("best") || search.includes("works")){
+            window.open("bestworks.html","_self");
+        }
+        else if(search.includes("work") || search.includes("experience")){
+            window.open("work.html","_self");
+        }
+        else if(search.includes("award") || search.includes("recognition")){
+            window.open("awards.html","_self");
+        }
+        else if(search.includes("article") || search.includes("blog")){
+            window.open("articles.html","_self");
+        }
+        else if(search.includes("memor")){
+            window.open("memories.html","_self");
+        }
+        else if(search.includes("photo") || search.includes("gallery")){
+            window.open("photos.html","_self");
+        }
+        else if(search.includes("project")){
+            window.open("projects.html","_self");
+        }
+        else if(search.includes("cv") || search.includes("resume") || search.includes("rahul")){
+            window.open("biodata.html","_self");
+        }
+        else{            
+            window.open("about.html","_self")
+        }
+    })
+},1);
+    </script>
+</body>
+</html>
