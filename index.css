@@ -1,0 +1,172 @@
+
+    * {
+        list-style: none;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Dosis', sans-serif;
+        scroll-behavior: smooth;
+        transition: all 0.5s ease;
+    }
+
+    body{
+        background-color: cornflowerblue;
+        }
+
+    .sidebar .photo img {
+        width: 10vw;
+        margin-left: 3vw;
+        margin-bottom: 1.5vh;
+        border-radius: 150px;
+    }
+
+    .sidebar {
+        background-color: #000322;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20vw;
+        height: 100%;
+        padding: 2vw 0;
+        transition: all 0.5s ease;
+    }
+
+    .sidebar ul li a {
+        display: block;
+        color: white;
+        padding: 1vw;
+        padding-top: 3.5vh;
+        border-bottom: 1px solid darkblue;
+        font-size: 2.5vw;
+        text-decoration: none;
+    }
+
+    .sidebar ul li a:hover,
+    .sidebar ul li a.active {
+        color: #000322;
+        background-color: cornflowerblue;
+    }
+
+    .sidebar ul li a:hover::before,
+    .sidebar ul li a.active::before {
+        display: block;
+    }
+
+    .section {
+        height: 10vh;
+        position: fixed;
+        z-index: 1;
+        width: calc(100% - 20vw);
+        margin-left: 20vw;
+        transition: all 0.5s ease;
+    }
+
+    .section .top_navbar {
+        background-color: #000322;
+        margin-top: 0;
+        height: 6vh;
+        align-items: center;
+        padding: 0 30px;
+    }
+
+    .section .top_navbar .icon i {
+        margin-left: -1vw;
+        margin-top: 1.5vh;
+        width: 1vw;
+        color: white;
+        font-size: larger;
+    }
+
+    .section .top_navbar .icon i:hover {
+        color: cornflowerblue;
+    }
+
+    body.active .sidebar{
+        left: -20vw;
+    }
+
+    body.active .section{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    body.active .main{
+        margin-left: 2.5vw;
+    }
+
+    .top_navbar .title {
+        margin-top: -3.5vh;
+        color: white;
+        font-size: 4vh;
+        text-align: center;
+    }
+
+    .main {
+        margin-left: 22.5vw;
+        top: 10vh;
+        transition: all 0.5s ease;
+        color: #000322;
+    }
+
+    .main #personal table tr td,
+    .main #education table tr td{
+        width: 18.5vw;
+        vertical-align: top;
+    }
+
+    
+    body.active .main #personal table tr td,
+    body.active .main #education table tr td{
+        width: 30vw;
+    }
+
+    #contacts{
+        color: white;
+        margin-left: -10vw;
+        width: calc(100%-20vw);
+        font-family: 'Dosis', sans-serif;
+        background: #000322;
+        transition: all 0.5s ease;
+        font-size: 1.5vw;
+      }
+
+      #personal, #education, #skills, #achievements{
+        font-size: 3.2vh;
+      }
+
+      body.active #contacts{
+        width: calc(100%+20vw);
+        font-size: 2vw;
+      }
+
+      body.active #contacts i{
+        justify-content: space-between;
+      }
+
+    #contacts h2{
+        color: white;
+        margin-left: 10vw;
+    }
+
+    #contacts i{
+        margin-left: 10vw;
+    }
+
+    #contacts a{
+        color: white;
+        text-decoration: none;
+        margin-right: 3vw;
+        text-align: center;
+    }
+    #contacts table tr td{
+        height: 6vh;
+    }
+
+    #contacts table{
+        transition: all 0.5s ease;
+    }
+
+    body.active #contacts table{
+        width: 100%
+    }
